@@ -2,8 +2,8 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@
 
     --bg-button: #E1E1E6;
     --bg-button-dark: #29292E;
-    --bg-button-active: #9932cc;
+    --bg-button-active: #02799D;
     --txt-button: #FFFFFF;
 }
 
