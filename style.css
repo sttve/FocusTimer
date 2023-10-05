@@ -10,14 +10,14 @@
 :root {
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 
-    --bg-color: #FFFFFF;
-    --txt-color: #323238;
+    --bg-color: #ffffff;
+    --txt-color: #000000;
 
-    --bg-controls: #E1E1E6;
+    --bg-controls: #ffffff;
 
     --bg-button: #E1E1E6;
     --bg-button-dark: #29292E;
-    --bg-button-active: #02799D;
+    --bg-button-active: #9932cc;
     --txt-button: #FFFFFF;
 }
 

@@ -33,7 +33,7 @@ export function incrementTimer() {
     let minutes = Number(elements.minutes.textContent)
     minutes = minutes + 5
     if (minutes > 60) {
-        alert("Não é possível acrescentar mais minutos");
+        alert("Tempo máximo de 60 minutos.");
         return
     }
     updateDisplay(minutes, 0)
@@ -43,7 +43,7 @@ export function decrementTimer() {
     let minutes = Number(elements.minutes.textContent)
     minutes = minutes - 5
     if (minutes < 5) {
-        alert("O tempo mínimo é de 5 minutos");
+        alert("Tempo mínimo de 5 minutos.");
         return
     }
     updateDisplay(minutes, 0)
