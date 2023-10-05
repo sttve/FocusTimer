@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timer estilo Pomodoro desenvolvido por Giselle Brasil - Desafio Stage 5 - Rocketseat">
+    <title>Focus Timer</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-svg">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar dark mode!</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+        <main>
+            <section id="timer" class="flex">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+
+            <section id="controls" class="flex">
+                <button 
+                    data-action="toggleRunning"
+                    class="ph-bold ph-play-circle"
+                >
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+
+                <button 
+                    data-action="toggleRunning"
+                    class="ph-bold ph-pause-circle"
+                >
+                    <span class="sr-only">Pausar contador</span>
+            </button>
+
+                <button 
+                    data-action="stopCounter"
+                    class="ph-bold ph-stop-circle"
+                >
+                    <span class="sr-only">Parar Contador</span>
+                </button>
+
+                <button 
+                    data-action="plusMinutes"
+                    class="ph-bold ph-plus-circle"
+                >
+                    <span class="sr-only">Adicionar 5 minutos</span>
+                </button>
+
+                <button 
+                    data-action="minusMinutes"
+                    class="ph-bold ph-minus-circle"
+                >
+                    <span class="sr-only">Remover  5 minutos</span>
+                </button>
+            </section>
+        </main>
+        <aside id="soundsControls" >
+            <button 
+                class="ph-bold ph-tree"
+                data-action="playForestSound"
+            >
+                <span class="sr-only">música tema floresta</span>                
+            </button>
+
+            <button 
+                class="ph-bold ph-cloud-rain"
+                data-action="playRainSound"
+            >
+                <span class="sr-only">música tema chuva</span>              
+            </button>
+
+            <button 
+                class="ph-bold ph-storefront"
+                data-action="playCoffeeShopSound"
+            >
+                <span class="sr-only">Música coffeeShop</span>            
+            </button>
+
+            <button 
+                class="ph-bold ph-campfire"
+                data-action="playFireplaceSound"
+            >
+                <span class="sr-only">Música lareira</span>                 
+            </button>
+
+        </aside>
+    </div>
+    
+</body>
+</html>
