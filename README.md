@@ -51,6 +51,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - Git e Github
 
-<br/>
-
 <h3 align="center">Feito com 💜</h3>
